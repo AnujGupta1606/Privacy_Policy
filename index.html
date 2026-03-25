@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Annadata Privacy Policy</title>
+  <style>
+    :root{
+      --bg:#0b1220;
+      --card:#0f1b33;
+      --text:#e8eefc;
+      --muted:#a9b7d0;
+      --line:#233458;
+      --accent:#7aa2ff;
+      --accent2:#33d6a6;
+      --shadow: 0 12px 28px rgba(0,0,0,.35);
+      --radius: 14px;
+      --max: 980px;
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      --sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:var(--sans);
+      background: radial-gradient(900px 500px at 10% -10%, rgba(122,162,255,.25), transparent 55%),
+                  radial-gradient(900px 500px at 90% 10%, rgba(51,214,166,.18), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+      line-height:1.55;
+    }
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+    header{
+      position:sticky; top:0; z-index:5;
+      background: rgba(11,18,32,.72);
+      backdrop-filter: blur(10px);
+      border-bottom:1px solid rgba(35,52,88,.7);
+    }
+    .topbar{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:14px 18px;
+      display:flex; gap:12px;
+      align-items:center; justify-content:space-between;
+    }
+    .brand{
+      display:flex; flex-direction:column;
+      gap:2px;
+    }
+    .brand h1{font-size:16px; margin:0; font-weight:700; letter-spacing:.2px}
+    .brand .sub{font-size:12px; color:var(--muted)}
+    .actions{display:flex; gap:10px; align-items:center}
+    .btn{
+      border:1px solid rgba(122,162,255,.35);
+      background:rgba(122,162,255,.12);
+      color:var(--text);
+      padding:8px 10px;
+      border-radius:10px;
+      cursor:pointer;
+      font-size:13px;
+    }
+    .btn:hover{background:rgba(122,162,255,.18)}
+    main{
+      max-width:var(--max);
+      margin:22px auto 70px;
+      padding:0 18px;
+      display:grid;
+      grid-template-columns: 280px 1fr;
+      gap:18px;
+    }
+    @media (max-width: 880px){
+      main{grid-template-columns: 1fr}
+      nav.toc{position:relative; top:auto}
+    }
+    .card{
+      background:rgba(15,27,51,.84);
+      border:1px solid rgba(35,52,88,.75);
+      box-shadow:var(--shadow);
+      border-radius:var(--radius);
+    }
+    nav.toc{
+      position:sticky; top:68px;
+      align-self:start;
+      padding:14px;
+    }
+    .toc h2{
+      font-size:13px;
+      margin:4px 0 10px;
+      color:var(--muted);
+      text-transform:uppercase;
+      letter-spacing:.12em;
+    }
+    .toc a{
+      display:block;
+      padding:8px 10px;
+      border-radius:10px;
+      color:var(--text);
+      border:1px solid transparent;
+    }
+    .toc a:hover{
+      background:rgba(122,162,255,.10);
+      border-color:rgba(122,162,255,.20);
+      text-decoration:none;
+    }
+    .toc a.active{
+      background:rgba(51,214,166,.12);
+      border-color:rgba(51,214,166,.22);
+    }
+    article{
+      padding:18px 18px 6px;
+    }
+    .meta{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px 14px;
+      padding:12px 14px;
+      margin:0 0 14px;
+      border-radius:12px;
+      background:rgba(35,52,88,.35);
+      border:1px solid rgba(35,52,88,.65);
+      color:var(--muted);
+      font-size:13px;
+    }
+    .pill{
+      font-family:var(--mono);
+      font-size:12px;
+      padding:4px 8px;
+      border-radius:999px;
+      border:1px solid rgba(169,183,208,.25);
+      background:rgba(11,18,32,.35);
+      color:var(--text);
+    }
+    h2{
+      margin:24px 0 10px;
+      font-size:18px;
+    }
+    h3{
+      margin:16px 0 8px;
+      font-size:15px;
+      color:var(--text);
+    }
+    p{margin:0 0 10px; color:rgba(232,238,252,.92)}
+    ul{margin:8px 0 12px 20px}
+    li{margin:6px 0; color:rgba(232,238,252,.92)}
+    .note{
+      padding:12px 14px;
+      border-radius:12px;
+      border:1px dashed rgba(122,162,255,.35);
+      background:rgba(122,162,255,.10);
+      color:rgba(232,238,252,.9);
+      margin:12px 0 12px;
+      font-size:13px;
+    }
+    footer{
+      max-width:var(--max);
+      margin:28px auto 0;
+      padding:0 18px 30px;
+      color:var(--muted);
+      font-size:13px;
+    }
+    .kbd{
+      font-family:var(--mono);
+      border:1px solid rgba(169,183,208,.25);
+      border-bottom-color: rgba(169,183,208,.45);
+      background:rgba(11,18,32,.5);
+      padding:2px 6px;
+      border-radius:8px;
+      color:var(--text);
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="topbar">
+    <div class="brand">
+      <h1 id="appTitle">Annadata – Privacy Policy</h1>
+      <div class="sub">Readable policy page for Google Play listing & in-app link</div>
+    </div>
+    <div class="actions">
+      <button class="btn" id="copyLinkBtn" type="button" title="Copy URL">Copy link</button>
+      <button class="btn" id="printBtn" type="button" title="Print or Save as PDF">Print</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <nav class="toc card" aria-label="Table of contents">
+    <h2>Contents</h2>
+    <a href="#overview">Overview</a>
+    <a href="#info-collection">Information Collection & Use</a>
+    <a href="#location">Location Data</a>
+    <a href="#ai">AI Features</a>
+    <a href="#third-party">Third-Party Services</a>
+    <a href="#disclosure">Disclosure of Information</a>
+    <a href="#opt-out">Opt-Out Rights</a>
+    <a href="#retention">Data Retention</a>
+    <a href="#children">Children’s Privacy</a>
+    <a href="#security">Security</a>
+    <a href="#changes">Changes to This Policy</a>
+    <a href="#consent">Your Consent</a>
+    <a href="#contact">Contact Us</a>
+  </nav>
+
+  <article class="card">
+    <div class="meta" role="note" aria-label="Policy metadata">
+      <span><strong>Effective date:</strong> <span class="pill" id="effectiveDate">2026-03-22</span></span>
+      <span><strong>Service provider:</strong> <span class="pill" id="providerName">Anuj Gupta</span></span>
+      <span><strong>App:</strong> <span class="pill" id="appName">Annadata – Food Donation App</span></span>
+    </div>
+
+    <section id="overview">
+      <h2>Overview</h2>
+      <p>
+        This Privacy Policy applies to the <strong id="appNameInline">Annadata – Food Donation App</strong> (the “Application”)
+        for mobile devices, created by <strong id="providerNameInline">Anuj Gupta</strong> (the “Service Provider”).
+        The Application is provided as a free service and is intended for use “AS IS”.
+      </p>
+      <div class="note">
+        Tip: Link this page in Google Play Console (Privacy Policy URL) and inside your app (Settings → Privacy Policy).
+      </div>
+    </section>
+
+    <section id="info-collection">
+      <h2>Information Collection & Use</h2>
+      <p>The Application may collect information when you download and use it. This may include:</p>
+      <ul>
+        <li>Your device’s Internet Protocol (IP) address</li>
+        <li>Pages/screens you visit within the Application, time/date of visits, and time spent</li>
+        <li>Time spent in the Application</li>
+        <li>Your mobile device operating system</li>
+      </ul>
+
+      <h3>User-provided information</h3>
+      <p>
+        For a better experience, the Service Provider may require you to provide certain personally identifiable information
+        (for example, account/contact details you enter in the app). This information will be retained and used as described
+        in this Privacy Policy.
+      </p>
+      <div class="note">
+        Replace the sentence above with the exact fields your app collects (e.g., name, phone, email, pickup address).
+        Avoid listing random emails as “data collected”.
+      </div>
+    </section>
+
+    <section id="location">
+      <h2>Location Data</h2>
+      <p>
+        The Application may collect your device’s location to help provide features (for example, showing nearby communities
+        or improving matching and logistics).
+      </p>
+      <ul>
+        <li><strong>Geolocation services:</strong> provide location-based features.</li>
+        <li><strong>Analytics & improvements:</strong> aggregated/anonymized insights to improve performance.</li>
+        <li><strong>Third-party services:</strong> some anonymized/aggregated location signals may be processed by providers that help operate the app.</li>
+      </ul>
+      <div class="note">
+        If you collect <em>precise</em> location, say “precise”. If only approximate, say “approximate”.
+      </div>
+    </section>
+
+    <section id="ai">
+      <h2>AI Features</h2>
+      <p>
+        The Application may use Artificial Intelligence (AI) technologies to enhance user experience and provide certain features.
+        AI components may process user data to deliver personalized content, recommendations, or automated functionalities.
+      </p>
+      <p>
+        AI processing is performed in accordance with this Privacy Policy and applicable laws. For questions about AI features,
+        contact the Service Provider.
+      </p>
+    </section>
+
+    <section id="third-party">
+      <h2>Third-Party Services</h2>
+      <p>
+        The Application may use third-party services that have their own privacy policies for handling data. Examples include:
+      </p>
+      <ul>
+        <li>Google Play Services</li>
+        <li>Google Analytics for Firebase</li>
+      </ul>
+      <div class="note">
+        Add/remove items so this list matches the SDKs you actually use (e.g., Firebase Crashlytics, FCM, Maps).
+      </div>
+    </section>
+
+    <section id="disclosure">
+      <h2>Disclosure of Information</h2>
+      <p>The Service Provider may disclose User Provided and Automatically Collected Information:</p>
+      <ul>
+        <li>as required by law (e.g., subpoena or similar legal process);</li>
+        <li>when disclosure is necessary to protect rights, safety, investigate fraud, or respond to a government request;</li>
+        <li>with trusted service providers who work on their behalf and agree to this policy.</li>
+      </ul>
+      <p>
+        Only aggregated, anonymized data may be periodically transmitted to external services to help improve the Application and service.
+      </p>
+    </section>
+
+    <section id="opt-out">
+      <h2>Opt-Out Rights</h2>
+      <p>
+        You can stop all collection of information by the Application by uninstalling it. You may use the standard uninstall
+        processes available as part of your device or the app marketplace.
+      </p>
+    </section>
+
+   <section id="retention">
+  <h2>Data Retention</h2>
+  <p>
+    The Service Provider will retain User Provided data for as long as you use the Application and for a reasonable time thereafter.
+    To request deletion of your account and associated data, submit this form:
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSccqvPP1mIGD7X78XAsGfj8xJJOVLd5qAWkWY45JHbXrMeh4g/viewform?usp=header" target="_blank" rel="noopener noreferrer">
+      Account Deletion Request Form
+    </a>,
+    or contact:
+    <a id="contactEmailLink" href="mailto:satyam2465@gmail.com">satyam2465@gmail.com</a>.
+  </p>
+</section>
+
+    <section id="children">
+      <h2>Children’s Privacy</h2>
+      <p>
+        The Service Provider does not knowingly collect personally identifiable information from children under the age of 13.
+        If the Service Provider discovers that a child under 13 has provided personal information, they will delete it.
+      </p>
+      <p>
+        If you are a parent/guardian and you believe your child has provided personal information, contact:
+        <a href="mailto:satyam2465@gmail.com">satyam2465@gmail.com</a>.
+      </p>
+    </section>
+
+    <section id="security">
+      <h2>Security</h2>
+      <p>
+        The Service Provider is concerned about safeguarding the confidentiality of your information and provides physical,
+        electronic, and procedural safeguards to protect information processed and maintained.
+      </p>
+    </section>
+
+    <section id="changes">
+      <h2>Changes to This Policy</h2>
+      <p>
+        This Privacy Policy may be updated from time to time. The Service Provider will notify you of any changes by updating
+        this page. You are advised to consult this Privacy Policy regularly; continued use is deemed approval of changes.
+      </p>
+    </section>
+
+    <section id="consent">
+      <h2>Your Consent</h2>
+      <p>
+        By using the Application, you consent to the processing of your information as set forth in this Privacy Policy now
+        and as amended by us.
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>
+        If you have any questions regarding privacy while using the Application, or questions about practices, contact the
+        Service Provider via email:
+        <a href="mailto:satyam2465@gmail.com">satyam2465@gmail.com</a>.
+      </p>
+    </section>
+
+    <footer>
+      <p>
+        Keyboard tip: press <span class="kbd">Ctrl</span> + <span class="kbd">P</span> (Windows/Linux) or
+        <span class="kbd">⌘</span> + <span class="kbd">P</span> (macOS) to print/save as PDF.
+      </p>
+    </footer>
+  </article>
+</main>
+
+<script>
+  // Update these constants to match your app details
+  const CONFIG = {
+    appName: "Annadata – Food Donation App",
+    providerName: "Anuj Gupta",
+    effectiveDate: "2026-03-22",
+    contactEmail: "satyam2465@gmail.com"
+  };
+
+  function setText(id, value){
+    const el = document.getElementById(id);
+    if (el) el.textContent = value;
+  }
+
+  // Apply config
+  setText("effectiveDate", CONFIG.effectiveDate);
+  setText("providerName", CONFIG.providerName);
+  setText("providerNameInline", CONFIG.providerName);
+  setText("appName", CONFIG.appName);
+  setText("appNameInline", CONFIG.appName);
+  setText("appTitle", `${CONFIG.appName} – Privacy Policy`);
+
+  // Email links
+  const emailLinks = document.querySelectorAll('a[href^="mailto:"]');
+  emailLinks.forEach(a => a.setAttribute("href", `mailto:${CONFIG.contactEmail}`));
+  const contactEmailLink = document.getElementById("contactEmailLink");
+  if (contactEmailLink) contactEmailLink.textContent = CONFIG.contactEmail;
+
+  // Print
+  document.getElementById("printBtn").addEventListener("click", () => window.print());
+
+  // Copy link
+  document.getElementById("copyLinkBtn").addEventListener("click", async () => {
+    try{
+      await navigator.clipboard.writeText(window.location.href);
+      alert("Link copied.");
+    }catch(e){
+      prompt("Copy this link:", window.location.href);
+    }
+  });
+
+  // TOC active section highlight
+  const tocLinks = [...document.querySelectorAll(".toc a")];
+  const sections = tocLinks
+    .map(a => document.querySelector(a.getAttribute("href")))
+    .filter(Boolean);
+
+  const obs = new IntersectionObserver((entries) => {
+    const visible = entries
+      .filter(e => e.isIntersecting)
+      .sort((a,b) => b.intersectionRatio - a.intersectionRatio)[0];
+    if (!visible) return;
+
+    const id = "#" + visible.target.id;
+    tocLinks.forEach(a => a.classList.toggle("active", a.getAttribute("href") === id));
+  }, { rootMargin: "-35% 0px -55% 0px", threshold: [0.1, 0.2, 0.3, 0.4, 0.5] });
+
+  sections.forEach(sec => obs.observe(sec));
+</script>
+</body>
+</html>
